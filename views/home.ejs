@@ -1,0 +1,56 @@
+<!-- main ejs file -->
+
+<html>
+<head>
+    <!-- local in views -->
+<title>
+
+<%= locals.title %>
+</title>
+<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Merienda|Raleway" rel="stylesheet">
+
+</head>
+<body>
+<h1><span> <i class="far fa-address-book" style="color:midnightblue;font-size: 1em;margin-right: 20px;"></i></span> My Contact List</h1>
+<div id="cl">
+<ul id="list">
+    <!-- displays the elements in the database at any point -->
+    <% for(let i of contact_list) { %>
+ <li>
+        <div class="paradiv">
+        
+            <p><%=i.name%></p>
+            <p style="text-align: center;"><%=i.phone%></p>
+  
+
+ 
+    </div>
+            
+            <!-- contains the route and the data to display on url with specified dynamic content-->
+            <a class="delete" href="/delete-contact/?id=<%= i._id%>">  <!-- for query params -->
+                [x]
+            </a>
+
+</li>
+
+    <% } %>
+</ul>
+</div>
+
+<div class="clr"></div>
+<!-- create-Contact used here for specifying action url in form -->
+<form  style = "text-align: center;margin-top: 30px;" action="create-Contact" method="POST">
+
+    <input type="text" name="name" placeholder="Enter Name" required style="font-size: 1em;margin-right:30px;width: 210px;">
+    <input type="number" name="phone" placeholder="Enter Phone" required style="font-size: 1em;margin-right:30px;width: 210px;">
+
+    <button type="submit" class = "btn" >Add Contact</button>
+</form>
+
+</body>
+
+
+</html>
