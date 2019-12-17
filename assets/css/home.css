@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+#cl{
+    background-color:midnightblue;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+
+}
+
+body>h1{
+    padding: 10px;
+    font-family: Raleway , sans-serif;
+    color: midnightblue;
+    text-align: center;
+}
+
+#list li {
+    list-style: none;
+    text-align: left;
+    border-bottom: 1px solid mintcream;
+}
+
+.paradiv{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 80%;
+    display: inline-block;
+}
+.paradiv:hover{
+    background-color: rgba(9, 19,36, 0.6);
+}
+
+#list li p{
+    color: white;
+    font-size:1rem;
+    padding: 10px;
+    display: inline-block;
+    
+}
+
+#list li p:nth-child(2){
+
+float:right;
+    
+}
+
+.delete {
+    
+    text-decoration: none;
+    display: inline-block;
+    color:white;
+    font-size: 1.5em;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 30px;
+    
+}
+
+.clr{
+    clear: both;
+}
+
+.btn{
+    border-radius:7px;
+    border: 2px solid transparent;
+    color:white;
+    font-size: 0.8em;
+    margin-right:30px;
+    width:120px;
+    padding:10px 5px;
+    background-color: rgb(9,19,36);
+    font-family: Raleway , sans-serif;
+}
+
+.btn:hover{
+     color:rgb(9, 19,36);
+     background-color: whitesmoke;
+     border: 2px solid rgb(9, 19,36);
+}
+
