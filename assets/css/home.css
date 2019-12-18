@@ -76,6 +76,7 @@ float:right;
     color:white;
     font-size: 0.8em;
     margin-right:30px;
+    margin-top: 30px;
     width:120px;
     padding:10px 5px;
     background-color: rgb(9,19,36);
@@ -86,5 +87,65 @@ float:right;
      color:rgb(9, 19,36);
      background-color: whitesmoke;
      border: 2px solid rgb(9, 19,36);
+}
+
+
+.contain{
+    
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+    display: table;
+    width: 40%;
+    height: 100px;
+    margin: auto;
+    box-shadow: 0px 3px 4px 6px grey;
+    background-color:white;
+
+}
+
+.contain .form1{
+    width: 50%;
+    height: 80px;
+    margin-top: 0px;
+    padding-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom: 1px solid grey;
+    /* flex: 1; */
+  display: table-cell;
+  border-right: 1px solid grey;
+ 
+ }
+
+ .contain .form1:hover{
+    background-color: rgba(163, 158, 158 , 0.3);
+ }
+
+ .contain .form2{
+    width: 50%;
+    height: 80px;
+    margin-top: 0px;
+    padding-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom: 1px solid grey;
+    /* flex: 1; */
+    display: table-cell;
+
+ }
+
+ .contain .form2:hover{
+    background-color: rgba(163, 158, 158 , 0.3);
+ }
+
+.catg{
+    color: rgba(128, 128, 128,0.8);
+}
+
+::placeholder{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    font-size: 20px;
 }
 
